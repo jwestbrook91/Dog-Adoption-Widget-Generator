@@ -1,14 +1,8 @@
-
-
 const DogWidget = require('./components/DogWidget');
 
-const DoggieWebScraper = require('./scrapers/DoggieWebScraper')
-
-
-
+const DoggieWebScraper = require('./scrapers/DoggieWebScraper');
 
 addEventListener('DOMContentLoaded', main);
-
 
 const submission = document.getElementById('submit-btn');
 const input = document.getElementById('textarea1');
@@ -20,7 +14,8 @@ function main() {
     console.log('this is input --->', input.value);
 
     scraper.scrape(input.value).then(data => {
-      DogWidget(data);
+      let $root = document.getElementById('root');
+      $root.appendChild(DogWidget(data));
     });
   });
 }
@@ -42,19 +37,19 @@ tag(children)
 //   );
 //   document.bodyappendChild(node);
 // }
-  // const node = div(
-  //   {class: 'container'},
-  //   div(
-  //     {class: 'card horizontal'},
-  //     div(
-  //       {class: 'card-image-center'}
-  //     )
-  //     img(
-  //       {src: `${url}`}
-  //     )
-  //   )
-  // )
-  /*
+// const node = div(
+//   {class: 'container'},
+//   div(
+//     {class: 'card horizontal'},
+//     div(
+//       {class: 'card-image-center'}
+//     )
+//     img(
+//       {src: `${url}`}
+//     )
+//   )
+// )
+/*
   <div class="container">
     <div class="card horizontal">
       <div class="card-image-center">
@@ -66,11 +61,11 @@ tag(children)
   </div>
 
   */
-  // const node = div(
-  //   { class: 'container' },
-  //   div({ class: 'card horizontal' }, [div({ class: 'card-image-center' }, img({ src: arg.url })), div({ class: 'card-content' }, 'THIS IS THE CONTENT')])
-  // );
-  // document.body.appendChild(node);
+// const node = div(
+//   { class: 'container' },
+//   div({ class: 'card horizontal' }, [div({ class: 'card-image-center' }, img({ src: arg.url })), div({ class: 'card-content' }, 'THIS IS THE CONTENT')])
+// );
+// document.body.appendChild(node);
 // const $root = document.querySelector('#root');
 // const $app = null; // <== Your dynamically generated DOM element goes here
 // $root.appendChild($app);
