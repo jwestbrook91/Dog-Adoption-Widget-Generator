@@ -1,5 +1,10 @@
+body {
+  background-color: green;
+}
+
 #root {
   margin-left: 200px;
+  background-color: lightblue;
 }
 
 #id-submit-btn {
