@@ -18,6 +18,8 @@ class DoggieWebScraper {
       console.log('this is my weight ----->', weight);
       let id = doc.querySelector('.field-name-field-animal-id .field-item').innerText.trim();
       let location = doc.querySelector('.field-name-field-animal-site').innerText.trim();
+      let description = doc.querySelector('.body p').innerText.trim();
+      console.log('this is description', description);
 
       const puppers = {
         img,
@@ -27,7 +29,8 @@ class DoggieWebScraper {
         gender,
         breed,
         weight,
-        location
+        location,
+        description
       };
       console.log(puppers);
       return puppers;

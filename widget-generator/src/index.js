@@ -9,7 +9,7 @@ const input = document.getElementById('textarea1');
 const scraper = new DoggieWebScraper();
 
 function main() {
-  submission.addEventListener('click', () => {
+  submission.addEventListener('click', event => {
     event.preventDefault();
     console.log('this is input --->', input.value);
 
