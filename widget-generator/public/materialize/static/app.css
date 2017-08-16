@@ -1,0 +1,60 @@
+body {
+  background-color: green;
+}
+
+#root {
+  margin-left: 200px;
+  background-color: lightblue;
+}
+
+#id-submit-btn {
+  background: crimson;
+}
+
+.container {
+  align: center;
+}
+
+.card {
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.breed {
+  font-size: 20px;
+}
+
+.age {
+  font-size: 20px;
+}
+
+.weight {
+  font-size: 20px;
+}
+
+.gender {
+  font-size: 20px;
+}
+
+.shelter .location {
+  font-size: 20px;
+}
+
+.id {
+  font-size: 20px;
+}
+
+.location {
+  font-size: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: red;
+}
