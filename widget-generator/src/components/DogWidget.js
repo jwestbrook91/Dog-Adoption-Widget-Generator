@@ -1,5 +1,5 @@
 module.exports = function DogWidget(puppers) {
-  const { div, img, a, i, h3, h5, span, p } = require('elementx');
+  const { div, img, h3, span, p } = require('elementx');
   const node = div(
     { class: 'container', alignItems: 'center' },
     div(

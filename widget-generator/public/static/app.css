@@ -2,13 +2,13 @@ body {
   background-color: green;
 }
 
-#textarea1 {
-  background: white;
-}
-
 #root {
   margin-left: 200px;
   background-color: lightblue;
+}
+
+#textarea1 {
+  background: white;
 }
 
 #id-submit-btn {
